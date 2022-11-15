@@ -1,0 +1,17 @@
+*~
+*.pyc
+*.pyo
+*.o
+*.so
+
+.DS_Store
+MANIFEST
+
+bin/
+doc/build/
+build/
+dist/
+
+# cython-generated
+mirnylib/numutils_new.cpp
+mirnylib/fastExtensions/fastExtensionspy.cpp
