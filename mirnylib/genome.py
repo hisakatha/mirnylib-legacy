@@ -64,7 +64,7 @@ class Genome(object):
         The drawback is that _memoize() doesn't check for the changes in the
         code of the function!'''
         if not hasattr(self, '_mymem'):
-            self._mymem = joblib.Memory(cachedir=self.cacheDir)
+            self._mymem = joblib.Memory(location=self.cacheDir)
 
         def run_func(readChrms, gapFile, chrmFileTemplate,
                      func_name, genomeName, *args, **kwargs):
